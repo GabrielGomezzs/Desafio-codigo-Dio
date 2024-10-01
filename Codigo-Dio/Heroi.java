@@ -9,6 +9,14 @@ public class Heroi {
         this.tipo = tipo;
     }
 
+    public void apresentar(){
+        System.out.println("-----------");
+        System.out.println("Nome: "+ nome);
+        System.out.println("Idade: "+ idade);
+        System.out.println("Tipo:: "+ nome);
+        System.out.println("-----------");
+    }
+
     public void atacar() {
         String ataque = "";
 
@@ -63,6 +71,8 @@ public class Heroi {
         Heroi monge = new Heroi("Shaolin", 30, "monge");
         Heroi ninja = new Heroi("Naruto", 17, "ninja");
 
+
+        mago.apresentar();
         mago.atacar();         // Saída: O mago atacou usando magia!
         guerreiro.atacar();    // Saída: O guerreiro atacou usando espada!
         monge.atacar();        // Saída: O monge atacou usando artes marciais!
